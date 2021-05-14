@@ -1,0 +1,145 @@
+:root {
+    --primary-color: rgb(253 0 0 / 44%);
+    --overlay-color: rgb(90 0 0 / 92%);
+    --menu-speed: 0.75s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+a,
+li {
+    text-decoration: none;
+    color: #ffae5a !important;
+    list-style: none;
+}
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    font-family: 'roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+#store-heading{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#burger-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    padding: 6px;
+    
+}
+
+.burger-name {
+    padding: 15px;
+    font-size: 1.4rem;
+}
+
+.price{
+    font-size: 1.2rem;
+}
+
+.buy-btn {
+    padding: 10px;
+    margin: 0px 0px 15px 15px;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    border: 1px solid rgb(255, 0, 0);
+    border-width: 0px;
+    border-radius: 3px;
+    width: fit-content;
+}
+
+.buy-btn:hover {
+    background-color: rgb(218, 2, 2);
+    transition: 0.4s ease-out all;
+}
+
+.burger-img {
+    width: 20rem; 
+	height: 280px;
+}
+
+.burger-1, .burger-2, .burger-3,
+.burger-4, .burger-5, .burger-6 {
+    margin: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1%;
+}
+
+.copyright{
+    padding-left: 7%;
+}
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: red;
+    margin-top: 15px;
+    padding: 15px 0px 15px 0px;
+}
+
+.social-link {
+    padding-right: 4%;
+    font-size: 1rem;
+
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    color: #000000;
+}
+  
+.fa-instagram:before {
+    content: "\f16d";
+    color: #000000;
+}
+  
+.fa-twitter:before {
+    content: "\f099";
+    color: #000000;
+}
+  
+  
+  
+.fa-facebook:before {
+    content: "\f09a";
+    color: #000000;
+    padding-right: 2rem;
+}
+  
+.fab:hover {color: rgb(255, 255, 255);}
+.fas:hover {color: rgb(255, 255, 255);}
+  
+
+/* Media Query */
+
+@media screen and (max-width: 425px) {
+    .social-link {
+        padding-right: 2%;
+    }
+
+    #store-heading{
+        font-size: 1.1rem;
+    }
+
+    .fa-facebook:before {
+        padding-right: 1rem;
+    }
+
+}
